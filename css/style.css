@@ -1,13 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
 div {
   margin: 0 auto;
 }
 
-.conteiner {
+.background {
   max-width: 1920px;
+  height: 100vh;
   background-image: url(../assets/img/bg.png);
   background-repeat: no-repeat;
+}
+
+.overlay {
+  max-width: 1920px;
+  height: 100vh;
+  background-color: #627a95;
+  background-repeat: no-repeat;
+  opacity: 60%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  vertical-align: center;
+  align-items:center;
+}
+
+.wrapper {
+  width: 920px;
+  height: 822px;
+  border-radius: 5%;
+  background-color: #f8f8f8;
+  margin: auto;
+  
 }
