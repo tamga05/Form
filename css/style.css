@@ -19,7 +19,7 @@ div {
 .overlay {
   max-width: 1920px;
   height: 100vh;
-  background-color: #627a95;
+  background-color: #306cb1;
   background-repeat: no-repeat;
   opacity: 60%;
   display: flex;
@@ -30,8 +30,27 @@ div {
 .wrapper {
   width: 920px;
   height: 822px;
+  border: 5px solid blue;
   border-radius: 5%;
-  background-color: #f8f8f8;
-  margin: auto;
-  
+  background-color: #ffffff;
+
+  box-shadow: ;
+  position: relative;
+}
+
+.header {
+
+}
+
+.form {
+  width: 920px;
+  height: 432px;
+  background-color: #75aa38;
+  position: absolute;
+  z-index: 1;
+  margin-top: 205px;
+}
+
+.footer {
+
 }
