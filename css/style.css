@@ -82,11 +82,8 @@ div {
   letter-spacing: 0.1px;
 }
 
-
-
-
-
 .content {
+  border: 1px solid red;
   height: 432px;
   background-color: #f8f8f8;
   display: flex;
@@ -97,6 +94,8 @@ div {
 .content__wrap {
   width: 500px;
   height: 332px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .content__form {
@@ -113,48 +112,83 @@ div {
   height: 40px;
   border: solid;
   border-color: #b3cbda;
+  position: relative;
+}
+
+.content__input::placeholder {
+  font: 400 13px Arial;
+  color: #c1c1c1;
+  padding-left: 13px;
 }
 
 .content__textarea {
-width: 500px;
-height: 147px;
-outline: none;
-border: solid;
-border-color: #b3cbda;
+  width: 500px;
+  height: 147px;
+  outline: none;
+  border: solid;
+  border-color: #b3cbda;
 }
 
-
-
-
-
-
-
-
+.content__textarea::placeholder {
+  font: 400 13px Arial;
+  color: #c1c1c1;
+  padding-left: 13px;
+  padding-top: 12px;
+}
 
 .footer {
   height: 183px;
 }
 
 .footer__wrap {
-width: 500px;
-height: 60px;
+  width: 500px;
+  height: 60px;
+  margin-top: 40px;
 }
 
 .footer__form {
   width: 500px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .footer__captcha {
-width: 320px;
-height: 40px;
+  position: relative;
+}
+
+.footer__captcha::after {
+  content: "Введите код на картинке справа";
+  width: 197px;
+  height: 11px;
+  font: 400 3px Arial;
+  color: #82a6bf;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+
+.footer__input {
+  width: 320px;
+  height: 40px;
+  overlay: none;
+  background-color: #f8f8f8;
 }
 
 .footer__img {
-width: 160px;
-height: 60px;
+  width: 160px;
+  height: 60px;
 }
 
 .footer__btn {
-
+  width: 208px;
+  height: 66px;
+  color: white;
+  font-size: 20px;
+  background-color: #16ba98;
+  border: transparent;
+  position: absolute;
+  bottom: -33px;
+  right: 356px;
 }
