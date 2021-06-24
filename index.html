@@ -13,11 +13,13 @@
 
     <div class="container"></div>
 
-        <div class="overlay"></div>
+    <div class="overlay"></div>
 
-        <div class="form">
+    <div class="form">
 
-            <div class="header">
+        <div class="header">
+
+            <div class="header__wrap">
 
                 <nav class="header__nav">
 
@@ -30,55 +32,47 @@
                 </nav>
 
                 <h1 class="header__title">Форма обратной связи</h1>
-
             </div>
 
-            <div сlass="main">
+        </div>
 
-                <form action="" type="text">
+        <div сlass="content">
 
-                    <div>
-                        <input type="text" name="">Введите ваше ФИО
-                    </div>
+            <div class="content__wrap">
 
-                    <div>
-                        <input type="text">
-                    </div>
+                <form class="content__form" action="" type="text">
 
-                    <div>
-                        <input type="text">
-                    </div>
+                    <input class="content__input" type="text" name="name" placeholder="Введите Ваше ФИО">
 
+                    <input class="content__input" type="text" name="email" placeholder="Введите Ваш Email">
 
-                    <div>
-                        <textarea class="" name="" row="5" cols="10" autofocus autocomplete="on"
-                            placeholder="Введите ваше обращение" required></textarea>
-                    </div>
+                    <input class="content__input" type="text" name="phone" placeholder="Введите Ваш телефон">
+
+                    <textarea class="content__textarea" name="appeal" row="5" cols="10" autofocus
+                        placeholder="Введите Ваше обращение" required></textarea>
 
                 </form>
 
             </div>
 
-            <div class="footer">
+        </div>
 
-                <form class="">
+        <div class="footer">
 
-                    <div>
-                        <label for="">Ввведите код на картинке справа
-                            <input type="text">
-                        </label>
-                    </div>
+            <div class="footer__wrap">
 
-                    <img src="" alt="">
+                <form class="footer__form">
+
+                    <input class="footer__captcha" type="text">
+
+                    <img class="footer__img" src="./assets/img/captcha.png" alt="">
+
+                    <input class="footer__btn" type="submit">
 
                 </form>
 
-                <div>
-                    <input type="submit">
-                </div>
-
             </div>
-
+            
         </div>
 
     </div>
