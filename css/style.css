@@ -66,6 +66,14 @@ div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.header__list::before {
+  content: url(../assets/img/wave.png);
+  position: absolute;
+  top: -40px;
+  left: 118px;
 }
 
 .header__item {
@@ -77,13 +85,21 @@ div {
 
 .header__title {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   letter-spacing: 0.1px;
+  margin-top: 32px;
+  position: relative;
+}
+
+.header__title::after {
+  content: url(../assets/img/wave.png);
+  position: absolute;
+  top: 40px;
+  left: 175px;
 }
 
 .content {
-  border: 1px solid red;
   height: 432px;
   background-color: #f8f8f8;
   display: flex;
