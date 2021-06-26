@@ -41,7 +41,7 @@ div {
   position: absolute;
   width: 920px;
   height: 820px;
-  border: 3px solid blue;
+  border: 0.1px solid blue;
   border-radius: 30px;
   background-color: #ffffff;
   top: 50%;
@@ -69,7 +69,7 @@ div {
 .header::after {
   content: url(../assets/img/circle.png);
   top: -17px;
-  right: 442px;
+  right: 446px;
   position: absolute;
 }
 
@@ -260,8 +260,6 @@ div {
 }
 
 .footer__img {
-  width: 160px;
-  height: 60px;
 }
 
 .footer__btn {
