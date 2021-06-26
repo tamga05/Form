@@ -243,6 +243,11 @@ div {
   right: 356px;
 }
 
+.footer__btn:focus {
+  border: 3px solid #71e093;
+  outline: none;
+}
+
 .footer__btn:hover {
   color: red;
   font-size: 25px;
