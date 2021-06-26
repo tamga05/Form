@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url("../assets/font/Montserrat-Bold.ttf") format("ttf")
+  src: url("../assets/font/Montserrat-Bold.ttf") format("ttf");
 }
 
 * {
@@ -64,14 +64,14 @@ div {
   left: 446px;
   position: absolute;
   z-index: 1;
-  }
-  
-  .header::after {
+}
+
+.header::after {
   content: url(../assets/img/circle.png);
   top: -17px;
   right: 442px;
   position: absolute;
-  }
+}
 
 .header__nav {
   margin-top: 70px;
@@ -112,7 +112,6 @@ div {
   font-weight: bold;
   line-height: 0.93;
   letter-spacing: -0.76px;
-  text-align: center;
   color: #0e1010;
   margin-top: 20px;
   position: relative;
@@ -128,17 +127,10 @@ div {
 .main {
   height: 432px;
   background-color: #f8f8f8;
+  box-shadow: inset 0 0 8.8px 0.2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 8.8px 0.2px;
-}
-
-.main__wrap {
-  width: 500px;
-  height: 332px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .main__block {
@@ -148,6 +140,8 @@ div {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .main__input {
@@ -204,11 +198,9 @@ div {
 
 .footer {
   height: 183px;
-}
-
-.footer__wrap {
-  width: 500px;
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   margin-top: 40px;
 }
 
@@ -255,7 +247,7 @@ div {
   letter-spacing: 0.48px;
   color: #82a6bf;
   position: absolute;
-  bottom: 115px;
+  bottom: 75px;
   left: 206px;
 }
 
