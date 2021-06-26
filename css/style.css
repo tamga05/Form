@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/font/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../assets/font/Montserrat-Bold.ttf") format("ttf")
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +109,7 @@ div {
   left: 175px;
 }
 
-.shape {
+.main {
   height: 432px;
   background-color: #f8f8f8;
   display: flex;
@@ -108,14 +118,14 @@ div {
   box-shadow: 0 0 9px 2px;
 }
 
-.shape__wrap {
+.main__wrap {
   width: 500px;
   height: 332px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.shape__block {
+.main__block {
   width: 500px;
   height: 332px;
   display: flex;
@@ -124,7 +134,7 @@ div {
   align-items: center;
 }
 
-.shape__input {
+.main__input {
   width: 500px;
   height: 40px;
   border: 1px solid;
@@ -133,18 +143,18 @@ div {
   position: relative;
 }
 
-.shape__input:focus {
+.main__input:focus {
   background-color: #d3e6f4;
   border: 3px solid #b3cbda;
 }
 
-.shape__input::placeholder {
+.main__input::placeholder {
   font: 400 13px Arial;
   color: #c1c1c1;
   padding-left: 13px;
 }
 
-.shape__area {
+.main__area {
   width: 500px;
   height: 147px;
   resize: none;
@@ -153,12 +163,12 @@ div {
   border-color: #b3cbda;
 }
 
-.shape__area:focus {
+.main__area:focus {
   background-color: #d3e6f4;
   border: 3px solid #b3cbda;
 }
 
-.shape__area::placeholder {
+.main__area::placeholder {
   font: 400 13px Arial;
   color: #c1c1c1;
   padding-left: 13px;
@@ -235,10 +245,11 @@ div {
 
 .footer__btn:hover {
   color: red;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  background-color: pink;
-  border: 3px solid #b3cbda;
-  transform: translateY(10px);
+  text-transform: uppercase;
+  background-color: rgb(237, 199, 205);
+  border: 5px solid red;
+  border-radius: 50px;
   transition: 1.5s;
 }

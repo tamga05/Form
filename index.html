@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" shape="IE=edge">
-    <meta name="viewport" shape="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Форма</title>
 </head>
@@ -36,20 +36,19 @@
 
         </div>
 
-        <div сlass="shape">
+        <div сlass="main">
 
-            <div class="shape__wrap">
+            <div class="main__wrap">
 
-                <form class="shape__block" action="#" method="#">
+                <form class="main__block" action="" method="post" id="mainbform">
 
-                    <input class="shape__input" type="text" name="name-person" placeholder="Введите Ваше ФИО">
+                    <input class="main__input" type="text" tabindex="1" required name="name-person" placeholder="Введите Ваше ФИО" autofocus>
 
-                    <input class="shape__input" type="text" name="email" placeholder="Введите Ваш Email">
+                    <input class="main__input" type="text" tabindex="2" required name="email" placeholder="Введите Ваш Email">
 
-                    <input class="shape__input" type="text" name="phone" placeholder="Введите Ваш телефон">
+                    <input class="main__input" type="text" tabindex="3" required name="phone" placeholder="Введите Ваш телефон">
 
-                    <textarea class="shape__area" name="appeal" rows="#" cols="#"
-                        placeholder="Введите Ваше обращение"></textarea>
+                    <textarea class="main__area" tabindex="4" required name="appeal" placeholder="Введите Ваше обращение"></textarea>
 
                 </form>
 
@@ -61,17 +60,17 @@
 
             <div class="footer__wrap">
 
-                <form class="footer__form">
+                <form class="footer__form" id="footerform">
 
                     <label class="footer__lable" for="captcha">Введите код на картинке справа</label>
 
-                    <input class="footer__captcha" type="text" name="captcha">
+                    <input class="footer__captcha" type="text" tabindex="5" required name="captcha" id="captcha">
 
                     <div class="footer__pic">
                         <img class="footer__img" src="./assets/img/captcha.png" alt="">
                     </div>
 
-                    <input class="footer__btn" type="submit">
+                    <input class="footer__btn" type="submit" form="mainbform">
 
                 </form>
 
