@@ -106,6 +106,14 @@ div {
   margin-top: 70px;
 }
 
+.header__link:focus {
+  outline: none;
+  background-color: #d3e6f4;
+  border: 2px solid #b3cbda;
+  border-radius: 5px;
+  padding: 2px;
+}
+
 .header__title {
   font-family: Montserrat;
   font-size: 38px;
