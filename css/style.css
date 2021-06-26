@@ -53,19 +53,28 @@ div {
 .header {
   height: 205px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__wrap {
-  width: 461px;
-  height: 69px;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
+.header::before {
+  content: url(../assets/img/х.png);
+  top: -10px;
+  left: 446px;
+  position: absolute;
+  z-index: 1;
+  }
+  
+  .header::after {
+  content: url(../assets/img/circle.png);
+  top: -17px;
+  right: 442px;
+  position: absolute;
+  }
+
 .header__nav {
+  margin-top: 70px;
 }
 
 .header__list {
@@ -82,7 +91,7 @@ div {
   content: url(../assets/img/wave.png);
   position: absolute;
   top: -40px;
-  left: 105px;
+  left: 113px;
 }
 
 .header__item {
@@ -113,7 +122,7 @@ div {
   content: url(../assets/img/wave.png);
   position: absolute;
   top: 40px;
-  left: 145px;
+  left: 153px;
 }
 
 .main {
@@ -144,6 +153,7 @@ div {
 .main__input {
   width: 500px;
   height: 40px;
+  padding-left: 31px;
   border: 1px solid;
   border-color: #b3cbda;
   outline: none;
@@ -160,8 +170,6 @@ div {
   font-size: 16px;
   line-height: 1.25;
   color: #bdbdbd;
-  padding-left: 31px;
-  padding-top: 14px;
 }
 
 .main__input:focus::placeholder {
@@ -171,6 +179,8 @@ div {
 .main__textarea {
   width: 500px;
   height: 147px;
+  padding-left: 31px;
+  padding-top: 14px;
   resize: none;
   outline: none;
   border: 1px solid #ebebeb;
@@ -186,8 +196,6 @@ div {
   font-size: 16px;
   line-height: 1.25;
   color: #bdbdbd;
-  padding-left: 31px;
-  padding-top: 14px;
 }
 
 .main__textarea:focus::placeholder {
@@ -215,6 +223,10 @@ div {
 .footer__captcha {
   width: 320px;
   height: 40px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 31px;
   border: 1px solid #ebebeb;
   background-color: #f8f8f8;
   outline: none;
@@ -224,6 +236,7 @@ div {
 .footer__captcha:focus {
   background-color: #d3e6f4;
   border: 3px solid #b3cbda;
+  color: #5a5b5b;
 }
 
 .footer__pic {
