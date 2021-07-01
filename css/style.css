@@ -243,8 +243,7 @@ div {
 }
 
 .footer__pic:hover {
-  transform: translateX(55px);
-  transform: translate(100px) rotate(360deg) scale(2);
+  transform: translate(105px, 5px) rotate(360deg) scale(2);
   transition: 2s;
 }
 
@@ -276,7 +275,15 @@ div {
 }
 
 .footer__btn:focus {
-  border: 3px solid #71e093;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(237, 199, 205);
+  border: 5px solid red;
+  border-radius: 50px;
+  transform: scale(1.3);
+  transition: 1.5s;
   outline: none;
 }
 
@@ -288,5 +295,6 @@ div {
   background-color: rgb(237, 199, 205);
   border: 5px solid red;
   border-radius: 50px;
+  transform: scale(1.3);
   transition: 1.5s;
 }
