@@ -60,7 +60,7 @@ div {
 
 .header::before {
   content: url(../assets/img/х.png);
-  top: -7px;
+  top: -10px;
   left: 447px;
   position: absolute;
   z-index: 1;
