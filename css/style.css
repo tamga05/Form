@@ -64,6 +64,7 @@ div {
   left: 448px;
   position: absolute;
   z-index: 1;
+  cursor: pointer;
 }
 
 .header::after {
@@ -71,6 +72,7 @@ div {
   top: -17px;
   right: 445px;
   position: absolute;
+  cursor: pointer;
 }
 
 .header__nav {
