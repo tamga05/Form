@@ -60,8 +60,8 @@ div {
 
 .header::before {
   content: url(../assets/img/х.png);
-  top: -7px;
-  left: 447px;
+  top: -8px;
+  left: 448px;
   position: absolute;
   z-index: 1;
   cursor: pointer;
